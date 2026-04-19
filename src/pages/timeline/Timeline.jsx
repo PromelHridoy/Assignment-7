@@ -4,6 +4,9 @@ import { FaVideo, FaComment, FaPhoneAlt, FaSearch } from 'react-icons/fa';
 
 const Timeline = () => {
     const { contact } = useContext(FriendContext);
+
+    console.log(contact, "contact");
+    
     
 
     const [selectedType, setSelectedType] = useState('all');
@@ -21,6 +24,9 @@ const Timeline = () => {
     // return matchType && matchSearch;
     return matchType;
 });
+
+console.log(filteredContacts);
+
 
     return (
         <div className='container mx-auto my-10 px-4 max-w-5xl'>
@@ -55,11 +61,11 @@ const Timeline = () => {
 
             <div className="flex flex-col gap-4">
                 {filteredContacts.length > 0 ? (
-                    filteredContacts.map((item) => (
+                    filteredContacts.map((item, ind) => (
                         
                         
                         <div 
-                            key={item.id} 
+                            key={ind} 
                             className="flex items-center p-5 bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md "
                         >
                             {/* Icon Logic based on type */}
@@ -72,7 +78,6 @@ const Timeline = () => {
                                 {item.type === 'call' && <FaPhoneAlt size={18} />}
                             </div>
 
-                            {/* Content */}
                             <div className="flex-row">
                                 <h3 className="text-gray-800 font-bold text-lg">
                                     {item.type} with <span className="text-gray-500 font-medium ml-1">{item.name}</span>
