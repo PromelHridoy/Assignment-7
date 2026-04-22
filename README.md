@@ -1,16 +1,80 @@
-# React + Vite
+# 🌿 KeenKeeper — Keep Your Friendships Alive
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Project Overview
 
-Currently, two official plugins are available:
+KeenKeeper is a modern friendship management web app that helps users track and nurture meaningful relationships. It allows users to monitor their interactions, set goals, and stay connected with friends through a clean and interactive interface.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Live Site
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🔗 
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Technologies Used
+
+* ⚛️ React.js
+* 🌐 React Router
+* 🎨 Tailwind CSS + DaisyUI
+* 📊 Recharts
+* 🔔 React Hot Toast
+
+---
+
+## ✨ Key Features
+
+### 👫 Friend Management
+
+* View all friends in a responsive grid layout
+* Each friend card shows photo, name, tags, and status
+* Click on card to view detailed friend information
+
+### 👤 Friend Details Page
+
+* Displays full profile including bio, email, and relationship goal
+* Quick actions: Call, Text, Video
+* Automatically logs interactions to timeline
+
+### 📜 Timeline System
+
+* Tracks all interactions (Call, Text, Video)
+* Displays date, type, and friend name
+* Filter timeline by interaction type
+
+### 📊 Friendship Analytics
+
+* Pie chart showing total Call, Text, and Video interactions
+* Built using Recharts
+
+---
+
+## 🔥 Additional Features
+
+* ✅ Fully responsive (Mobile, Tablet, Desktop)
+* ⏳ Loading spinner while data loads
+* 🔔 Toast notifications for actions
+* ❌ 404 Not Found page
+
+---
+
+## 📂 Project Structure
+
+```
+src/
+ ├── assets/
+ ├── components/
+ ├── /context/
+ ├── layout/
+ ├── Not-Found/
+ ├── pages
+ ├── Routes/
+```
+
+
+
+## 👨‍💻 Author
+
+**Promel Hossain Hridoy**
+
+
