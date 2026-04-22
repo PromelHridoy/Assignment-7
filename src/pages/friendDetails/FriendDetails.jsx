@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { useLoaderData, useParams } from 'react-router';
+import { useLoaderData, useNavigation, useParams } from 'react-router';
 import callImg from '../../assets/call.png';
 import textImg from "../../assets/text.png";
 import videoImg from '../../assets/video.png';
@@ -7,9 +7,21 @@ import { FriendContext } from '../../context/FriendContext';
 import toast from 'react-hot-toast';
 
 const FriendDetails = () => {
+    const navigation = useNavigation();
+    console.log(navigation.state);
+    
     const { id: friendId } = useParams();
     const friends = useLoaderData();
     const { contact, setContact } = useContext(FriendContext);
+
+    if(navigation.state === "loading"){
+        console.log("Loading friend details...");
+        return (
+            <div className="flex justify-center items-center h-screen">
+                <span className="loading loading-spinner text-info"></span>
+            </div>
+        )
+    }
 
     const expectedFriend = friends.find((friend) => friend.id === Number(friendId));
 

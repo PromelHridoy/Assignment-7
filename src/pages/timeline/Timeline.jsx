@@ -68,10 +68,10 @@ console.log(filteredContacts);
                             key={ind} 
                             className="flex items-center p-5 bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md "
                         >
-                            {/* Icon Logic based on type */}
+                            
                             <div className={`w-12 h-12 flex items-center justify-center rounded-xl mr-5 shrink-0 ${
                                 item.type === 'video' ? 'bg-yellow-100 text-yellow-600' :
-                                item.type === 'chat' ? 'bg-yellow-50 text-yellow-500' : 'bg-rose-50 text-rose-400'
+                                item.type === 'text' ? 'bg-yellow-50 text-yellow-500' : 'bg-rose-50 text-rose-400'
                             }`}>
                                 {item.type === 'video' && <FaVideo size={20} />}
                                 {item.type === 'text' && <FaComment size={20} />}
