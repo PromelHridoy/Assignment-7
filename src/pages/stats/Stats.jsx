@@ -3,9 +3,6 @@ import { PieChart, Pie, Cell, Tooltip, Legend } from "recharts";
 import { FriendContext } from '../../context/FriendContext';
 
 
-
-
-
 const Stats = () => {
     const COLORS = ["#8B5CF6", "#065F46", "#22C55E"];
     const { contact } = useContext(FriendContext);
